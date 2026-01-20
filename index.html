@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediksi Bola ARENA303</title>
+<style>
+body {
+  background: url("https://cdn.areabermain.club/assets/cdn/az6/2026/01/11/20260111/5c07cb8d3d7cb938847805784f747eae/arena303-backgroundweb.jpg") center/cover fixed no-repeat;
+  margin:0;
+  font-family: Arial, sans-serif;
+  color:#fff;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 2px solid #ff3300;
+  background: rgba(0,0,0,0.7);
+  color: #ffcc66;
+  font-weight: bold;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 18px;
+  margin-right: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff3300, #ff8800);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+}
+button:hover {
+  background: linear-gradient(45deg, #ff6600, #ffcc33);
+  transform: scale(1.05);
+}
+
+.arena-wrap {
+  background: rgba(0,0,0,0.88);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 35px rgba(255,50,0,0.7);
+  animation: fadeIn 1.5s ease;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+
+/* ✅ LOGO DITURUNKAN SEDIKIT */
+.logo {
+  text-align:center;
+  margin-bottom:15px;
+  margin-top:25px;
+}
+.logo img {
+  max-width:350px;
+  filter: drop-shadow(0 0 20px #ff3300);
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from {filter: drop-shadow(0 0 10px #ff4400);}
+  to {filter: drop-shadow(0 0 30px #ffaa33);}
+}
+
+.marquee {
+  background: linear-gradient(90deg,#ff4c00,#ffb400,#ff4c00);
+  color:#fff;
+  padding:12px;
+  overflow:hidden;
+  white-space:nowrap;
+  font-weight:bold;
+  margin-bottom:15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff6600;
+}
+.marquee span { display:inline-block; animation: run 25s linear infinite; }
+@keyframes run {
+  0%{transform:translateX(100%)}
+  100%{transform:translateX(-100%)}
+}
+
+.tanggal-terbaru {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc66;
+  text-shadow: 0 0 8px #ff6600;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(30,0,0,0.9);
+  box-shadow: 0 0 20px rgba(255,50,0,0.7);
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(135deg,#ff6600,#ffcc33);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffcc66;
+  text-shadow: 0 0 6px #000;
+}
+
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #440000;
+  color:#ffd27f;
+  text-align: center;
+  word-break: break-word;
+  transition: 0.3s;
+}
+td span { font-size: 12px; color: #ff9933; }
+tr:hover td {
+  background: rgba(255,51,0,0.7);
+  color:#fff;
+  font-weight:bold;
+  transform: scale(1.02);
+}
+
+.league {
+  background: linear-gradient(135deg,#aa0000,#ff3300);
+  color:#ffd27f;
+  font-weight:bold;
+  text-align:center;
+  padding:14px;
+  font-size:17px;
+  letter-spacing:1px;
+  text-shadow: 0 0 10px #ff3300;
+  border-radius: 8px 8px 0 0;
+}
+
+@media only screen and (max-width: 420px) {
+  table { font-size: 11px; border-radius:6px; }
+  td span { font-size: 10px; }
+  th { padding: 6px 4px; font-size: 12px; }
+  .league { font-size: 16px; padding: 10px 5px; }
+  textarea { font-size: 13px; height:120px; }
+  button { font-size: 13px; padding: 8px 14px; }
+  .tanggal-terbaru { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="logo">
+  <img src="https://cdn.areabermain.club/assets/cdn/az6/2026/01/11/20260111/f0a5fff36a8e4468eec3a9c4fc7a6602/arena303-logo-fix-besar.png">
+</div>
+
+<div class="marquee">
+  <span>🔥 Prediksi Bola Terupdate • Analisis Akurat • ARENA303 🔥</span>
+</div>
+
+<textarea id="data" placeholder="Masukkan prediksi pertandingan di sini..."></textarea>
+<button id="generateBtn">Generate Tabel</button>
+<button id="copyBtn">Copy HTML Prediksi</button>
+
+<div class="arena-wrap" id="resultArea">
+  <div class="logo">
+    <img src="https://cdn.areabermain.club/assets/cdn/az6/2026/01/11/20260111/f0a5fff36a8e4468eec3a9c4fc7a6602/arena303-logo-fix-besar.png">
+  </div>
+
+  <div class="marquee">
+    <span>🔥 Prediksi Bola Terupdate • Analisis Akurat • ARENA303 🔥</span>
+  </div>
+
+  <div class="tanggal-terbaru" id="tanggalTerbaruGenerate"></div>
+
+  <table id="tabel"></table>
+</div>
+
+<script>
+const generateBtn = document.getElementById("generateBtn");
+const copyBtn = document.getElementById("copyBtn");
+const dataInput = document.getElementById("data");
+const table = document.getElementById("tabel");
+
+function generateTable() {
+  table.innerHTML = "";
+  const raw = dataInput.value.trim().split("\n");
+
+  raw.forEach(line=>{
+    line=line.trim();
+    if(!line) return;
+
+    if (line === line.toUpperCase()) {
+      if (table.rows.length > 0) {
+        let spacer = document.createElement("tr");
+        spacer.innerHTML = `<td colspan="3" style="height:15px"></td>`;
+        table.appendChild(spacer);
+      }
+      let leagueRow = document.createElement("tr");
+      leagueRow.innerHTML = `<td colspan="3" class="league">🏆 ${line}</td>`;
+      table.appendChild(leagueRow);
+
+      let headerRow = document.createElement("tr");
+      headerRow.innerHTML = `
+        <th>TANGGAL</th>
+        <th>PERTANDINGAN</th>
+        <th>PREDIKSI</th>
+      `;
+      table.appendChild(headerRow);
+    } else {
+      let parts = line.split(" ");
+      let date = parts[0];
+      let time = parts[1] + " " + parts[2];
+      let score = parts.slice(-3).join(" ");
+      let match = line.replace(date,"").replace(time,"").replace(score,"").trim();
+
+      let tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${date}<br><span>${time}</span></td>
+        <td>${match}</td>
+        <td>${score}</td>
+      `;
+      table.appendChild(tr);
+    }
+  });
+}
+
+generateBtn.addEventListener("click", generateTable);
+
+copyBtn.addEventListener("click", function() {
+  const styles = document.querySelector("style").outerHTML;
+  const html = `<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediksi Bola ARENA303</title>
+${styles}
+</head>
+<body>
+${document.getElementById("resultArea").outerHTML}
+</body>
+</html>`;
+
+  navigator.clipboard.writeText(html)
+    .then(()=>alert("HTML prediksi berhasil dicopy!"));
+});
+
+const t = new Date();
+const opt = { weekday:'long', day:'numeric', month:'long', year:'numeric' };
+document.getElementById("tanggalTerbaruGenerate").textContent =
+  `${t.toLocaleDateString('id-ID', opt)}`;
+</script>
+
+</body>
+</html>
