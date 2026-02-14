@@ -16,19 +16,26 @@ body {
 .menu {
   list-style-type: none;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  background: transparent; /* Hilangkan bayangan hitam */
   border-radius: 8px;
   margin-bottom: 20px;
-  display: flex; /* Untuk menu horizontal */
-  justify-content: space-around; /* Menyebar link di sepanjang menu */
+  display: flex; 
+  justify-content: space-around; 
 }
 .menu li {
-  margin: 0 10px; /* Spasi antar link */
+  margin: 0 10px; 
 }
 .menu a {
   text-decoration: none;
-  color: #ffcc66;
+  color: #ffffff; 
   font-weight: bold;
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #ff3300, #ff8800);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.menu a:hover {
+  background: linear-gradient(45deg, #ff6600, #ffcc33);
 }
 
 textarea {
@@ -76,7 +83,6 @@ button:hover {
 
 @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
 
-/* ✅ LOGO DITURUNKAN SEDIKIT */
 .logo {
   text-align:center;
   margin-bottom:15px;
@@ -93,11 +99,11 @@ button:hover {
 }
 
 .powered-by {
-  font-size: 16px; /* Ukuran font lebih besar */
-  color: #ffffff; /* Warna putih */
-  font-weight: bold; /* Tebal */
-  margin-top: 5px; /* Spacing di atas teks */
-  text-shadow: 0 0 8px #ff6600, 0 0 10px #000000; /* Bayangan untuk meningkatkan visibilitas */
+  font-size: 16px; 
+  color: #ffffff; 
+  font-weight: bold; 
+  margin-top: 5px; 
+  text-shadow: 0 0 8px #ff6600, 0 0 10px #000000; 
 }
 
 .marquee {
@@ -195,12 +201,12 @@ tr:hover td {
   <li><a href="https://nuriil777.github.io/Deposit-15-/" target="_blank">Bonus Deposit 15%</a></li>
   <li><a href="https://nuriil777.github.io/Cek-Rekening/" target="_blank">Cek Rekening Bermasalah</a></li>
   <li><a href="https://turnoverharian.vercel.app/" target="_blank">Turnover Harian</a></li>
-  <li><a href="https://nuriil777.github.io/validasimember-arena303/" target="_blank">Validasi Member</a></li> <!-- Link yang ditambahkan -->
+  <li><a href="https://nuriil777.github.io/validasimember-arena303/" target="_blank">Validasi Member</a></li>
 </ul>
 
 <div class="logo">
   <img src="https://cdn.areabermain.club/assets/cdn/az6/2026/01/11/20260111/f0a5fff36a8e4468eec3a9c4fc7a6602/arena303-logo-fix-besar.png">
-  <div class="powered-by">Powered By NuRiL</div> <!-- Teks yang tetap ada -->
+  <div class="powered-by">Powered By NuRiL</div> 
 </div>
 
 <div class="marquee">
@@ -214,7 +220,6 @@ tr:hover td {
 <div class="arena-wrap" id="resultArea">
   <div class="logo">
     <img src="https://cdn.areabermain.club/assets/cdn/az6/2026/01/11/20260111/f0a5fff36a8e4468eec3a9c4fc7a6602/arena303-logo-fix-besar.png">
-    <!-- Teks "Powered By NuRiL" sudah dihapus dari sini -->
   </div>
 
   <div class="marquee">
